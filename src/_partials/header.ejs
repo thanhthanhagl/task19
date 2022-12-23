@@ -1,0 +1,46 @@
+<header class="c-header">
+  <div class="c-header__topbar">
+    <div class="c-header__topbarmain l-container l-container--w1110">
+      <a class="c-header__toplink" href="#">ニュースリリース</a>
+      <a class="c-header__toplink" href="#">よくあるご質問</a>
+    </div>
+  </div>
+  <div class="c-header__main l-container l-container--w1110">
+    <a class="c-header__logo" href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="さくらタクシーグループ"></a>
+    <nav class="c-header__nav">
+      <ul class="c-header__menu">
+        <% if (typeof linklists !='undefined' ) { %>
+          <% linklists.main && linklists.main.forEach(link=> { %>
+            <li class="c-header__item">
+              <a class="c-header__link <% if (link.current || link.active) { %>is-active<% } %>" href="<%=
+                    link.url %>">
+                <%= link.title %>
+              </a>
+            </li>
+            <% }) %>
+              <% } %>
+      </ul>
+    </nav>
+    <div class="c-header__iconmenu u-notpc">
+      <div class="c-header__icon">
+        <span class="c-header__line"></span>
+        <span class="c-header__line"></span>
+        <span class="c-header__line"></span>
+      </div>
+    </div>
+    <nav class="c-header__navmb">
+      <ul class="c-header__menumb">
+        <% if (typeof linklists !='undefined' ) { %>
+          <% linklists.main && linklists.main.forEach(link=> { %>
+            <li class="c-header__linkmb">
+              <a class="c-header__itemmb <% if (link.current || link.active) { %> is-active <% } %>"
+                href="<%= link.url %>">
+                <%= link.title %>
+              </a>
+            </li>
+            <% }) %>
+              <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>

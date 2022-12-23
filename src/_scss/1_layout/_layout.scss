@@ -1,0 +1,23 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: YuGothic, "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    font-size: 1.4rem;
+    min-width: 320px;
+    line-height: 1.5;
+}
+
+//-------------------------------------------------------
+.l-container {
+    width: 100%;
+    margin: 0 auto;
+
+    &--w1110 {
+        max-width: 1110px;
+    }
+
+    &--w984 {
+        max-width: 984px;
+    }
+}
+//-------------------------------------------------------

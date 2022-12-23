@@ -1,0 +1,39 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
+
+  <!-- @content -->
+  <main class="p-top">
+    <!-- start mainvisual -->
+    <section class="c-mainvisual">
+      <div class="c-mainvisual__slider">
+        <div class="c-mainvisual__wrapimg c-mainvisual__slideone">
+          <div class="c-mainvisual__inner c-mainvisual__innermain">
+            <h1 class="c-mainvisual__title c-mainvisual__pagetitle">
+              <img src="./assets/img/main1text.png" alt="First Class	 Service">
+            </h1>
+            <p class="c-mainvisual__subtitle">積み重ねてきた信頼が、上質なサービスを生み出す。<br>
+              あくなきサービスの追求と革新へのチャレンジ！
+            </p>
+          </div>
+        </div>
+        <div class="c-mainvisual__wrapimg c-mainvisual__slidetwo">
+          <div class="c-mainvisual__inner">
+            <p class="c-mainvisual__subtitle c-mainvisual__subtext">静かなる移動オフィス ～ CrownRoyal Hyblid</p>
+          </div>
+        </div>
+        <div class="c-mainvisual__wrapimg c-mainvisual__slidethree">
+          <div class="c-mainvisual__inner">
+            <p class="c-mainvisual__subtitle c-mainvisual__subtext">新しいラインナップ – ハイグレードタクシー</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end mainvisual -->
+    <!-- start tab -->
+    <%- include('_partials/tab'); -%>
+    <!-- end tab -->
+  </main>
+  <!-- @@content -->

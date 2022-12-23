@@ -1,0 +1,104 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "タクシー",
+        "url": "/"
+      },
+      {
+        "title": "ハイヤー",
+        "url": "#"
+      },
+      {
+        "title": "会社情報",
+        "url": "#"
+      },
+      {
+        "title": "車両情報",
+        "url": "#"
+      },
+      {
+        "title": "新卒採用",
+        "url": "#"
+      },
+      {
+        "title": "中途採用",
+        "url": "#"
+      },
+      {
+        "title": "お問い合わせ",
+        "url": "contact.html"
+      }
+    ]
+  },
+  "tab": {
+    "tab1": [
+      {
+        "featureimg": "./assets/img/FeatureImgtab1.jpg",
+        "alt": "タクシーサービス",
+        "title": "お迎え専用電話をしていただければ<br>配車がスムーズです",
+        "desc": "さくらタクシーでは、全車で3ナンバーのクラウン・ロイヤルサルーン、スーパーサルーンを使用し、快適な車内空間をご提供いたします。",
+        "btn": "タクシーサービスの特徴を見る",
+        "link": "#",
+        "servicetitle": "サービス案内",
+        "servicetxt": "Service guide",
+        "item": [
+          {
+            "img": "./assets/img/img1tab1.jpg",
+            "txt": "タクシーを呼ぶ",
+            "link": "#"
+          },
+          {
+            "img": "./assets/img/img2tab1.jpg",
+            "txt": "乗り場案内",
+            "link": "#"
+          },
+          {
+            "img": "./assets/img/img3tab1.jpg",
+            "txt": "料金・チケット",
+            "link": "#"
+          },
+          {
+            "img": "./assets/img/img4tab1.png",
+            "txt": "車両情報",
+            "link": "#"
+          }
+        ]
+      }
+    ],
+    "tab2": [
+      {
+        "featureimg": "./assets/img/FeatureImgtab2.jpg",
+        "alt": "ハイヤーサービス",
+        "title": "きめ細やかなサービスで<br>快適な時間をご提供いたします。",
+        "desc": "高級車輛とFirst Classのサービスを独占ください。<br>単なる移動ではなく、「時間」「空間」「サービス」をご提供いたします",
+        "btn": "ハイヤーサービスの特徴を見る",
+        "link": "#",
+        "servicetitle": "サービス案内",
+        "servicetxt": "Service guide",
+        "item": [
+          {
+            "img": "./assets/img/img1tab2.jpg",
+            "txt": "役員車・社用車",
+            "link": "#"
+          },
+          {
+            "img": "./assets/img/img2tab2.jpg",
+            "txt": "ドライバー派遣",
+            "link": "#"
+          },
+          {
+            "img": "./assets/img/img3tab2.jpg",
+            "txt": "スポット利用",
+            "link": "#"
+          },
+          {
+            "img": "./assets/img/img4tab2.jpg",
+            "txt": "観光ハイヤー",
+            "link": "#"
+          }
+        ]        
+      }
+    ]
+  }
+}

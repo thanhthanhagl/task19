@@ -1,0 +1,177 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    align-items: center;
+    position: relative;
+    background-color: $white;
+    width: 100%;
+
+    &.is-scroll {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .c-header__topbar {
+        background-color: rgb(34, 34, 34);
+        padding: 10px 4px 8px 0;
+    }   
+
+    .c-header__topbarmain {
+        display: flex;
+        justify-content: flex-end;
+    }   
+
+    .c-header__toplink {
+        color: $white;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        line-height: 1;
+        font-feature-settings: "palt" 1;
+        display: block;
+        border-right: 2px solid $white;
+        padding: 0 19px 0 18px;
+
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+    }
+
+    .c-header__item {
+        &:nth-child(1) {
+            transform: translateX(7px);
+        }
+
+        &:nth-child(2) {
+            transform: translateX(2px);
+        }
+    }
+    // Main menu
+
+    .c-header__main {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 2px 24px 0;
+    }
+
+    .c-header__logo {
+        max-width: 235px;
+        width: 100%;
+        display: block;
+    }
+
+    .c-header__nav {
+        width: 65%;
+        max-width: 708px;
+        @include tab {
+            display: none;
+        }
+    }
+
+    .c-header__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-header__link {
+        font-family: $main-font;
+        font-weight: 500;
+        color: $button;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        display: block;
+        padding: 10px 0;        
+    }
+    // Menu Mobile
+    .c-header__icon {
+        width: 33px;
+        position: relative;
+        top: 7px;
+
+        &.is-open {
+            &.c-header__icon .c-header__line {
+                &:first-child {
+                    transform: translate(3px, 7px) rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    transform: translate(3px, -5px) rotate(-135deg);
+                }                
+            }
+
+            &::after {
+                content: "閉じる";
+                top: -7px;
+                left: 8px;
+            }
+        }
+
+        &::after {
+            content: "メニュー";
+            font-family: $main-font;
+            font-weight: 300;
+            font-size: 0.9rem;
+            color: $black;
+            letter-spacing: 0;
+            line-height: 1;
+            font-feature-settings: "palt" 1;
+            position: relative;
+            top: -9px;
+        }
+    }
+
+    .c-header__line {
+        border-radius: 2px;
+        background-color: $black;
+        display: block;
+        height: 3px;
+        margin-bottom: 3px;
+        width: 25px;
+        left: 5px;
+        position: relative;
+    }
+
+    .c-header__navmb {
+        display: none;
+
+        @include tab {
+            display: none;
+            z-index: 11;
+            position: fixed;
+            width: 100%;
+            height: calc(100% - 123px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: $white;
+
+            &.is-open {
+                display: block;
+                top: 123px;
+                left: 0;
+            }
+        }
+    }
+
+    .c-header__linkmb {
+        padding: 0 19px;
+    }
+
+    .c-header__itemmb {
+        font-family: $main-font;
+        font-weight: 500;
+        color: $button;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        display: block;
+        padding: 19px 0;
+    }
+}
+

@@ -1,0 +1,100 @@
+<section class="c-tab">
+    <div class="c-tab__main l-container l-container--w1110">
+        <div class="c-tab__tabtop">
+            <input class="c-tab__input" type="radio" hidden name="tabs" id="tab_left" checked>
+            <label class="c-tab__label c-tab__first" for="tab_left">
+                <p class="c-tab__text">タクシーサービス</p>
+                <p class="c-tab__textbt">他社に追随を許さない新サービスの展開</p>
+            </label>
+            <input class="c-tab__input" type="radio" hidden name="tabs" id="tab_right">
+            <label class="c-tab__label c-tab__second" for="tab_right">
+                <p class="c-tab__text">ハイヤーサービス</p>
+                <p class="c-tab__textbt">（高級車を専属利用）プロとしての責任感と上質なサービス</p>
+            </label>
+        </div>
+        <div class="l-container l-container--w984">
+            <div class="c-tab__content c-tab__left">
+                <% if (typeof tab !='undefined' ) { %>
+                    <% tab.tab1 && tab.tab1.forEach(item=> { %>
+                        <div class="c-tab__top">
+                            <div class="c-tab__topleft">
+                                <img src="<%= item.featureimg %>" alt="<%= item.alt %>">
+                            </div>
+                            <div class="c-tab__topright">
+                                <h2 class="c-tab__title"><%- item.title %></h2>
+                                <p class="c-tab__desc"><%- item.desc %></p>
+                                <a href="<%= item.link %>" class="c-tab__btn">
+                                    <%= item.btn %>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="c-tab__bottom">
+                            <div class="c-tab__service">
+                                <h3 class="c-tab__sertitle">
+                                    <%= item.servicetitle %>
+                                </h3>
+                                <p class="c-tab__serdesc">
+                                    <%= item.servicetxt %>
+                                </p>
+                            </div>
+                            <div class="c-tab__list">
+                                <% if (typeof item.item !='undefined' ) { %>
+                                    <% item.item && item.item.forEach(i=> { %>
+                                        <a href="<%= i.link %>" class="c-tab__item">
+                                            <div class="c-tab__feature">
+                                                <img class="c-tab__featureimg" src="<%= i.img %>" alt="<%= i.txt %>">
+                                            </div>
+                                            <h4 class="c-tab__txtfeature">
+                                                <%= i.txt %>
+                                            </h4>
+                                        </a>
+                                        <% })} %>
+                            </div>
+                        </div>
+                        <% }) %>
+                            <% } %>
+            </div>
+            <div class="c-tab__content c-tab__right">
+                <% if (typeof tab !='undefined' ) { %>
+                    <% tab.tab2 && tab.tab2.forEach(item=> { %>
+                        <div class="c-tab__top">
+                            <div class="c-tab__topleft">
+                                <img src="<%= item.featureimg %>" alt="<%= item.alt %>">
+                            </div>
+                            <div class="c-tab__topright">
+                                <h2 class="c-tab__title"><%- item.title %></h2>
+                                <p class="c-tab__desc"><%- item.desc %></p>
+                                <a href="<%= item.link %>" class="c-tab__btn">
+                                    <%= item.btn %>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="c-tab__bottom">
+                            <div class="c-tab__service">
+                                <h3 class="c-tab__sertitle">
+                                    <%= item.servicetitle %>
+                                </h3>
+                                <p class="c-tab__serdesc">
+                                    <%= item.servicetxt %>
+                                </p>
+                            </div>
+                            <div class="c-tab__list">
+                                <% if (typeof item.item !='undefined' ) { %>
+                                    <% item.item && item.item.forEach(i=> { %>
+                                        <a href="<%= i.link %>" class="c-tab__item">
+                                            <div class="c-tab__feature">
+                                                <img class="c-tab__featureimg" src="<%= i.img %>" alt="<%= i.txt %>">
+                                            </div>
+                                            <h4 class="c-tab__txtfeature">
+                                                <%= i.txt %>
+                                            </h4>
+                                        </a>
+                                        <% })} %>
+                            </div>
+                        </div>
+                        <% }) %>
+                            <% } %>
+            </div>
+        </div>
+    </div>
+</section>
