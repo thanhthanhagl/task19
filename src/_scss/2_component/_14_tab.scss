@@ -1,5 +1,5 @@
 .c-tab {
-    padding: 60px 0;
+    padding: 60px 0 91px;
     background-color: #eee;
 
     .c-tab__main {
@@ -76,7 +76,7 @@
     }
 
     .c-tab__content {        
-        margin: 66px auto 61px;
+        padding: 66px 0 65px;
         width: 100%;
         height: 100%;
         display: none;
@@ -163,4 +163,64 @@
     .c-tab__featureimg {
         border-radius: 50%;
     }
+
+    .c-tab__bottom {
+        display: flex;
+        justify-content: space-between;
+        background-color: #eee;
+        margin-top: 60px;
+    }
+
+    .c-tab__service {
+        width: 27%;
+        background-color: $black;
+        max-width: 265px;
+        text-align: center;
+        padding: 75px 0;
+    }
+
+    .c-tab__sertitle {
+        font-family: $hira;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1;
+        letter-spacing: 0;
+        font-feature-settings: "palt" 1;
+        color: $white;
+    }
+
+    .c-tab__serdesc {
+        font-family: $opensans;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        color: $white;
+    }
+      
+    .c-tab__list {
+        width: 66.5%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 715px;
+        align-items: center;
+        padding-right: 77px;
+    }
+
+    .c-tab__item {
+        margin-top: -5px;
+        text-align: center;
+    }
+
+    .c-tab__txtfeature {
+        font-family: $main-font;
+        color: $black;
+        font-feature-settings: "palt" 1;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        font-weight: 500;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
+
 }

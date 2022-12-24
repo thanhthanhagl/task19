@@ -1,0 +1,114 @@
+.c-news {
+    padding: 70px 0 55px;
+
+    .c-new__heading {
+        text-align: center;
+    }
+
+    .c-news__title {
+        font-family: $opensans;
+        font-weight: 700;
+        line-height: 0.7;
+        letter-spacing: 3px;
+        font-size: 3rem;
+        color: $black;
+    }
+
+    .c-news__desc {
+        font-weight: 300;
+        font-family: $hira;
+        letter-spacing: 0;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        color: $black;
+        margin-top: 10px;
+        font-feature-settings: "palt" 1;
+    }
+
+    .c-news__seemore {
+        text-align: right;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $button;
+    }
+
+    .c-news__link {
+        font-family: $main-font;
+        font-weight: 500;
+        letter-spacing: 0;
+        font-size: 1.4rem;
+        font-feature-settings: "palt" 1;
+        line-height: 1.4;
+        color: $button;
+
+        &::before {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            letter-spacing: 0;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+    }
+
+    .c-news__list {
+        padding-top: 45px;
+    }
+
+    .c-news__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px dotted $black;
+        font-feature-settings: "palt" 1;
+    }
+
+    .c-news__date {
+        width: 5%;
+        font-family: $main-font;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1.3;
+        color: $black;
+    }
+
+    .c-news__info {
+        width: 90%;
+    }
+
+    .c-news__tags {
+        display: inline-block;
+        width: max-content;
+    }
+
+    .c-news__tag {
+        display: inline-block;
+        background-color: $yellow;
+        padding: 4px 30px;
+        text-align: center;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 1.3;
+        color: $white;
+        margin-right: 10px;
+        border-radius: 14px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }      
+
+    .c-news__post {
+        display: inline-block;
+        margin-left: 30px;
+        font-family: $main-font;
+        font-weight: 500;
+        letter-spacing: 0;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        color: $black;;
+    }
+}

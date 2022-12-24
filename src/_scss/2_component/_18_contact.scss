@@ -1,0 +1,48 @@
+.c-contact {
+    padding: 40px 0;
+
+    .c-contact__content {
+        background-image: url("./assets/img/contact.jpg");
+        height: 410px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .c-contact__inner {
+        position: relative;
+        top: 125px;
+    }
+
+    .c-contact__title {
+        text-align: center;
+        font-family: $hira;
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 0.7;
+        letter-spacing: -2.5px;
+        font-feature-settings: "palt" 1;
+        color: $white;
+    }
+
+    .c-contact__main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 43px;
+    }
+
+    .c-contact__label {
+        background-color: rgba(0, 0, 0, 0.7);
+        max-width: 350px;
+        width: 100%;
+        border: 1px solid $white;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .c-contact__right {
+        background-color: rgb(130, 20, 26);
+        border: none;
+        display: block;
+        padding: 28px 0;
+    }
+}
