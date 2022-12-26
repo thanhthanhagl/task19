@@ -128,13 +128,16 @@
         "date":"2018.08.21",
         "tag":[
           {
-            "name":"ニュース"
+            "name":"ニュース",
+            "class":"c-news__news"
           },
           {
-            "name":"プレス情報"
+            "name":"プレス情報",
+            "class":"c-news__mega"
           },
           {
-            "name":"メディア情報"
+            "name":"メディア情報",
+            "class":"c-news__media"
           }
         ],
         "title":"ネット決済および時間指定予約受付スタート！！"

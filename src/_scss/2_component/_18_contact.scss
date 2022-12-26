@@ -19,15 +19,18 @@
         font-weight: 600;
         font-size: 2.8rem;
         line-height: 0.7;
-        letter-spacing: -2.5px;
+        letter-spacing: -2.6px;
+        margin-left: -8px;
         font-feature-settings: "palt" 1;
         color: $white;
+        padding-top: 10px;
+        text-shadow: 0 0 16px rgba(0, 0, 0, 0.92);
     }
 
     .c-contact__main {
         display: flex;
         justify-content: space-between;
-        margin-top: 43px;
+        margin-top: 44px;
     }
 
     .c-contact__label {
@@ -35,14 +38,53 @@
         max-width: 350px;
         width: 100%;
         border: 1px solid $white;
-        padding: 16px 0;
+        padding: 16px 0 9px;
         text-align: center;
+        font-feature-settings: "palt" 1;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 1.4rem;
+        letter-spacing: 1.4px;
+        line-height: 1.1;
+        color: $white;
+    }
+
+    .c-contact__tel {
+        margin-top: 11px;
+        margin-left: -2px;
+    }
+
+    .c-contact__number {
+        font-family: $sou;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 0.7;
+        font-size: 3rem;
+        color: $white;
+        margin-left: -5px;
     }
 
     .c-contact__right {
         background-color: rgb(130, 20, 26);
         border: none;
         display: block;
-        padding: 28px 0;
+        padding: 28px 0 23px;
+
+        &>.c-contact__txt {
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: 2px;
+            margin-left: -3px;
+
+            &::after {
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 600;
+                letter-spacing: 1.8px;
+                line-height: 1.4;
+                font-size: 1.8rem;
+                margin-left: 23px;
+            }
+        }
     }
 }

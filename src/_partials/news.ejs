@@ -1,5 +1,5 @@
 <section class="c-news">
-    <div class="l-container l-container--w1110">
+    <div class="l-container l-container--w11">
         <div class="c-new__heading">
             <h2 class="c-news__title">NEWS</h2>
             <p class="c-news__desc">ニュースリリース</p>
@@ -17,7 +17,7 @@
                                 <div class="c-news__tags">
                                     <% if(typeof item.tag != 'undefined'){
                                         item.tag && item.tag.forEach(tag=> { %>
-                                            <span class="c-news__tag"><%= tag.name %></span>
+                                            <span class="c-news__tag <%= tag.class %>"><%= tag.name %></span>
                                     <%  })
                                     } %>
                                 </div>
